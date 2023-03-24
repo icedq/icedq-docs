@@ -2,10 +2,10 @@
 sidebar_position: 1
 ---
 
-# iCEDQ NextGen
+# Home
 
-Install **iCEDQ NextGen in few click on your prefered environment**.
+This documentation is for the next generation platform of ICEDQ. It includes detailed information about the installation of the product either on-premise or any of the supported cloud environments. 
 
-
-Get started by **following the installation infra document**.
-
+:::note
+The documentation is work in progress and updated continuously. As an end users you can also contribute changes to the GitHub repository.
+:::
