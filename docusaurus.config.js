@@ -42,7 +42,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://bitbucket.org/toranainc/icedq-docs/src/master/',
+            'https://github.com/icedq/icedq-docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
