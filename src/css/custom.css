@@ -1,0 +1,159 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #fcd621;
+  --ifm-color-primary-dark: #fcd105;
+  --ifm-color-primary-darker: #efc603;
+  --ifm-color-primary-darkest: #c5a303;
+  --ifm-color-primary-light: #fcdb3d;
+  --ifm-color-primary-lighter: #fdde4b;
+  --ifm-color-primary-lightest: #fde675;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-link-color: #1994be;
+  --ifm-breadcrumb-color-active: #009AE4;
+  --ifm-menu-color: #001623;
+  --ifm-toc-link-color: #001623;
+  --ifm-menu-color-active: #009AE4;
+  --ifm-link-hover-color: #009AE4;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #fcd621;
+  --ifm-color-primary-dark: #fcdf51;
+  --ifm-color-primary-darker: #fcdc3e;
+  --ifm-color-primary-darkest: #fbd208;
+  --ifm-color-primary-light: #feed99;
+  --ifm-color-primary-lighter: #fef0ac;
+  --ifm-color-primary-lightest: #fffae2;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+.navbar__logo {
+  flex: 0 0 auto;
+  margin-right: 4.5rem;
+  width: 150px;
+  height: 66px;
+}
+/* navbar height */
+ .navbar{
+  background-color: #fcd621;
+  height: 92px;
+} 
+/* homepage title color */
+.hero__title{
+  color: #001623;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height:1.1;
+}
+.hero--primary {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 89%);
+}
+.heroBanner_src-pages-index-module {
+  padding: 3.8rem 0 !important;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.navbar__link{
+  margin: 25px 3px 25px 3px;
+  padding: 7px 11px 7px 11px;
+}
+/* menuhover */
+.navbar__link:hover, .navbar__link--active {
+  color: var(--ifm-navbar-link-hover-color);
+  text-decoration: none;
+  background-color: #153f59;
+  transition: background .3s ease;
+}
+/* subheading */
+p.hero__subtitle.sub-heading.text--left {
+  color: #001623;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+/* homepage button */
+a.button.button--secondary.button--lg.margin-right--md.ctaButton_1XfG {
+  background-color: #153f59;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+/* homepage learn more button */
+a.button.button--secondary.button--lg.margin-right--md.ctaButton_1XfG.learn-more {
+  background-color: transparent;
+  border: 1.8px solid #153f59;
+  color: #001623;
+}
+a.button.button--secondary.button--lg.margin-right--md.ctaButton_1XfG.learn-more:hover {
+  background-color: #153f59;
+  color: #fff;
+  transition: color var(--ifm-button-transition-duration) cubic-bezier(.08,.52,.52,1),background var(--ifm-button-transition-duration) cubic-bezier(.08,.52,.52,1),border-color var(--ifm-button-transition-duration) cubic-bezier(.08,.52,.52,1);
+}
+.footer {
+  /* background-color: rgba(141,144,149,0.08) none repeat center top; */
+  background-color: #153f59;
+  color: #ffffff;
+  padding: var(--ifm-footer-padding-vertical) var(--ifm-footer-padding-horizontal);
+  border-top: 1px solid #d1d1d1;
+}
+.footer--dark {
+  --ifm-footer-background-color: rgba(141,144,149,0.08) none repeat center top;
+  --ifm-footer-color: var(--ifm-footer-link-color);
+  --ifm-footer-link-color: var(--ifm-color-secondary);
+  --ifm-footer-title-color: #FFF;
+}
+.footer__link-item {
+  color: #FFFFFF;
+  line-height: 2;
+}
+a:hover {
+  color: var(--ifm-link-hover-color);
+  text-decoration: var(--ifm-link-hover-decoration);
+}
+.footer__link-item:hover {
+  color: #FFFFFF;
+}
+.footer__copyright {
+  text-align: left;
+}
+/* column css */
+ .column {
+  flex: 100%;
+  padding: 28px;
+  height: 300px;
+  display:inline-block;
+  border: 1px solid #ccc;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 1.5px 3px 0 rgba(0,0,0,.15);
+  transition: all var(--ifm-transition-fast) ease;
+  transition-property: border,box-shadow;
+}
+/*column padding*/
+.features_src-components-HomepageFeatures-styles-module {
+  padding: 5rem 0 !important;
+}
+/* .container {
+  display: flex;
+}	 */
+/* sidebar color  */
+ a.table-of-contents__link.toc-highlight.table-of-contents__link--active {
+  color: #009AE4;
+}
+.table-of-contents__link:hover, .table-of-contents__link:hover code, .table-of-contents__link--active, .table-of-contents__link--active code {
+  color: #009AE4 !important;
+  text-decoration: none;
+}
+ /*client logo  */
+ .text--left.client-logo {
+  margin-top: 15px !important; 
+ } 
+ 

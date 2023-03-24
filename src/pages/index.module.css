@@ -1,0 +1,72 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+/* .heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+} */
+
+/* @media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+} */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2.hero__subtitle.sub-heading {
+  font-size: 36px;
+  color: #001623;
+}
+.row .col {
+  --ifm-col-width: 53% !important;
+  display: block;
+  flex: 1 0;
+  margin-left: 0;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-left: var(--ifm-spacing-horizontal);
+  padding-right: 1rem;
+  padding-right: var(--ifm-spacing-horizontal);
+  width: 100%;
+}
+
+/* column padding*/
+.col.col--4 {
+  /* padding: 2px !important; */
+}
+
+/* main-head */
+.hero__title {
+  color: #001623;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 1.1 !important;
+  text-align: left;
+}
+
+/* subheading */
+p.hero__subtitle.sub-heading.text--left {
+  color: #001623;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* homepage button */
+a.button.button--secondary.button--lg.margin-right--md.ctaButton_1XfG {
+  background-color: #153f59;
+  color: #ffffff;
+  border: none;
+  border-radius: 1px;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.text--left.client-logo {
+  margin-top: 15px !important;
+}

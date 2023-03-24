@@ -1,0 +1,10 @@
+{
+  "label": "Dedicated EKS Cluster",
+  "position": 2,
+  "collapsed":false,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Choose the mode of installation"
+  }
+}

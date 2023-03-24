@@ -1,0 +1,10 @@
+{
+  "label": "OnPrem",
+  "position": 1,
+  "collapsed":false,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Choose the installation platform"
+  }
+}

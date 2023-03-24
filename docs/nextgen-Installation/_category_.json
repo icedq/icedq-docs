@@ -1,0 +1,11 @@
+{
+  
+  "label": "NextGen Installation",
+  "position": 1,
+  "collapsed":false,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Choose where you want to install the software"
+  }
+}
