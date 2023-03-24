@@ -7,5 +7,5 @@ sidebar_position: 1
 Install **iCEDQ NextGen in few click on your prefered environment**.
 
 
-Get started by **following the installation infra**.
+Get started by **following the installation infra document**.
 
