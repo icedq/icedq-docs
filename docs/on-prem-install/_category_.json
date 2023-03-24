@@ -1,0 +1,11 @@
+{
+  
+  "label": "Installing On Premise",
+  "position": 1,
+  "collapsed":false,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Everything related to installing the software on premise"
+  }
+}

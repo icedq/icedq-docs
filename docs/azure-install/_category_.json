@@ -1,11 +1,11 @@
 {
   
-  "label": "NextGen Installation",
+  "label": "Installing On Azure",
   "position": 1,
   "collapsed":false,
   "collapsible": true,
   "link": {
     "type": "generated-index",
-    "description": "Choose where you want to install the software"
+    "description": "Everything related to installing the software on Azure"
   }
 }

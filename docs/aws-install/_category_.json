@@ -1,10 +1,11 @@
 {
-  "label": "Embedded Cluster",
+  
+  "label": "Installing On AWS",
   "position": 1,
   "collapsed":false,
   "collapsible": true,
   "link": {
     "type": "generated-index",
-    "description": "Choose the mode of installation"
+    "description": "Everything related to installing the software on AWS"
   }
 }
