@@ -1,1 +1,1 @@
-# Installing on Virtual Machines
+# Install on Virtual Machines

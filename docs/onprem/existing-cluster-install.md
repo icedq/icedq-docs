@@ -1,1 +1,1 @@
-# Installing on an Existing Cluster
+# Install on an Existing Cluster

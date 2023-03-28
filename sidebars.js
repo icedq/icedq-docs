@@ -30,6 +30,26 @@ const sidebars = {
         'onprem/vm-cluster-install',
         'onprem/existing-cluster-install'
         ]
+    },
+        {
+      type: 'category',
+      label: 'Installing On AWS',
+      items: [
+        'aws/requirements',
+        'aws/deployment',
+        'aws/vm-cluster-install',
+        'aws/existing-cluster-install'
+        ]
+    },
+        {
+      type: 'category',
+      label: 'Installing On Azure',
+      items: [
+        'azure/requirements',
+        'azure/deployment',
+        'azure/vm-cluster-install',
+        'azure/existing-cluster-install'
+        ]
     }
   ],
 };
