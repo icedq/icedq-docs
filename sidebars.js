@@ -51,7 +51,7 @@ const sidebars = {
         'azure/existing-cluster-install'
         ]
     }
-  ],
+  ]
 };
 
 module.exports = sidebars;
