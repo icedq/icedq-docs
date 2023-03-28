@@ -15,7 +15,7 @@ If it’s more convenient, limit answers to the scope of the target infrastructu
 * If the environment has no outbound network, do machines in a DMZ have direct network access to the air gapped infrastructure, or do release artifacts need to be copied to physical media for installation?
 * If there is an issue causing downtime in the on-prem application, would you be willing to give the ICEDQ team direct SSH access to the instance(s)?
 
-###Development and Deployment Processes
+### Development and Deployment Processes
 
 * Do you require applications be deployed by a configuration management framework like Chef, Ansible, or Puppet?
 * Do you run any container-based workloads today?
@@ -24,7 +24,7 @@ If it’s more convenient, limit answers to the scope of the target infrastructu
 * If you run container workloads, what tools do you use to scan and secure container images?
 * If you are deploying ICEDQ to your existing Kubernetes cluster, can your cluster nodes pull images from the public internet, or do you require images to be stored in an internal registry?
 
-###Change Management
+### Change Management
 
 * How do you test new releases of COTS software? Do you have a UAT or Staging environment? Are there other change management requirements?
 * How often do you like to receive planned (non-critical) software updates? Quarterly? Monthly? As often as possible?
