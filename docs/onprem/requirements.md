@@ -3,6 +3,7 @@
 The topic describes the requirements for installing the application either on virtual machines or an existing kubernetes cluster. 
 
 ## Using Virtual Machines
+
 To install the application on virtual machines, your environment must meet the following minimum requirements. 
 
 ### Minimum System Requirements
@@ -11,7 +12,7 @@ To install the application on virtual machines, your environment must meet the f
 * 8 CPUs or equivalent per machine. 
 * 16 GB of RAM per machine. 
 
-### Disk Space
+#### Disk Space
 
 * 250 GB of disk space for installation per machine.  
 * 50 GB of /tmp partition per machine. 
@@ -22,11 +23,11 @@ To install the application on virtual machines, your environment must meet the f
 Symbolic links are not supported for partitions. 
 :::
 
-### Operating Systems
+#### Operating Systems
 
 Ubuntu 22.04, RHEL 8.1 and above are the supported operating systems. 
 
-### Networking 
+#### Networking 
 
 Ideally firewall should be open between all the machines but if it is not possible due to security requirements then below list of ports should be open.
 
@@ -34,11 +35,11 @@ Ideally firewall should be open between all the machines but if it is not possib
 * UDP port 8472.
 * Node port 32222.
 
-### Database 
+#### Database 
 
 The application is bundled with a postgreSQL database repository for POC purposes. For production deployment we recommend using external postgreSQL 10.X and above database server. 
 
-## RBAC Requirements
+### RBAC Requirements
 
 Root or SUDO access is required to perform the installation.
 
