@@ -47,7 +47,8 @@ const sidebars = {
         'azure/vm-cluster-install',
         'azure/existing-cluster-install'
         ]
-    }
+    },
+    'customer-environment'
   ]
 };
 

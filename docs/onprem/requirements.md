@@ -87,7 +87,7 @@ The application is bundled with a postgreSQL database repository for POC purpose
 
 The user that runs the installation command must have at least the minimum role-based access control (RBAC) permissions that are required by the app manager. If the user does not have the required RBAC permissions, then an error message displays: `Current user has insufficient privileges to install Admin Console`.
 
-Currently, the application requires cluster-scope access. With cluster-scoped access, a Kubernetes ClusterRole and ClusterRoleBinding are created that grant the app manager access to all resources across all namespaces in the cluster.
+Currently, the application requires cluster-scoped access. With cluster-scoped access, a Kubernetes ClusterRole and ClusterRoleBinding are created that grant the app manager access to all resources across all namespaces in the cluster.
 
 To install the app manager with cluster-scoped access, the user must meet the following RBAC requirements:
 * The user must be able to create workloads, ClusterRoles, and ClusterRoleBindings. 
