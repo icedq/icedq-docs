@@ -21,7 +21,7 @@ function HomepageHeader() {
             <p className='hero__subtitle sub-heading text--left'>Identify data issues in your Data Warehouse, Big Data
               and Data Migration Projects.</p>
             <div className='text--left'>
-              <a href="/docs/intro" class="button button--secondary button--lg margin-right--md ctaButton_1XfG">Get Started</a>
+              <a href="/docs/" class="button button--secondary button--lg margin-right--md ctaButton_1XfG">Get Started</a>
               <a href="https://icedq.com" class="button button--secondary button--lg margin-right--md ctaButton_1XfG learn-more">Learn More</a>
             </div>
           </div>

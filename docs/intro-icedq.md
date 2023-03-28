@@ -1,14 +1,19 @@
-#What is ICEDQ
+---
+
+sidebar_position: 2
+---
+
+# What is ICEDQ
 It is an integrated data testing and monitoring platform used by organizations to help identify data issues across their data ecosystem. 
 
-##Use Cases
+## Use Cases
 
 Below is list of a couple use cases of ICEDQ. 
 * ETL/ Data Warehouse Testing
 * Data Migration Testing 
 * Production Data Monitoring 
 
-##Architecture
+## Architecture
 
 ICEDQ is a microservice-based containerized application that enterprises can deploy on-premise or in any cloud environment. 
 
@@ -16,12 +21,12 @@ The following high level diagram shows different services, components and techno
 
 Image goes here 
 
-###App Manager (Admin Console)
+### App Manager (Admin Console)
 
 The app manager is us1ed to install, upgrade, monitor, manage, troubleshoot, backup and restore the application in your environment. 
 Image goes here
 
-###Application 
+### Application 
 
 The application contains different products for testing, monitoring, reporting, issue management and administration. 
 Image goes here 
