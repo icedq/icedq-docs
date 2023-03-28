@@ -8,13 +8,18 @@ Make sure you meet the [Virtual Machine Installation Requirements](requirements#
 
 ## Online Installation 
 
+
 ### Deployment
+
 
 ### Install
 
-### Add Node(s)
+
+### Add Nodes
+
 
 ### Complete Setup
+
 
 ## Air Gapped Installation
 
