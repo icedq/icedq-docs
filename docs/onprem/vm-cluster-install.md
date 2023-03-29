@@ -8,9 +8,16 @@ Make sure you meet the [Virtual Machine Installation Requirements](requirements#
 
 ## Online Installation 
 
+This section is for installing the application in an online environment. 
 
-### Deployment
+:::important
+This is our recommended approach. 
+:::
 
+### Delivery Model
+
+Following diagram documents how the software is delivered in customer environment in an online environment.
+![On Prem Online Delivery Model](/img/on-prem-online-delivery-model.png)
 
 ### Install
 
@@ -21,7 +28,7 @@ Make sure you meet the [Virtual Machine Installation Requirements](requirements#
 ### Complete Setup
 
 
-## Air Gapped Installation
+## Air Gap Installation
 
 
 

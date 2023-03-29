@@ -63,6 +63,10 @@ Our recommendation is to perform the installation in online mode. For this follo
 
 To install the application on an existing Kubernetes cluster, your environment must meet the following minimum requirements. 
 
+:::important
+Currently, we recommend using a dedicated cluster for installing iceDQ. 
+:::
+
 ### Minimum System Requirements
 
 * K8 or OpenShift cluster must be running v1.23, v1.24 or v1.25 kubernetes version. 
