@@ -33,15 +33,9 @@ After the installation is complete follow below steps.
 * Note down kotsadm (admin console) details and the password 
 * Log in to the admin console to complete the application setup
 
-###  
+### Configure 
 
 ### Add Nodes
 
-
-### Complete Setup
-
-
-## Air Gap Installation
-
-
+### Login
 
