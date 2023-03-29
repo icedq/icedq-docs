@@ -15,7 +15,7 @@
   --ifm-color-primary-lightest: #fde675;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-link-color: #1994be;
+  --ifm-link-color: #009AE4;
   --ifm-breadcrumb-color-active: #009AE4;
   --ifm-menu-color: #001623;
   --ifm-toc-link-color: #001623;
@@ -33,6 +33,10 @@
   --ifm-color-primary-lighter: #fef0ac;
   --ifm-color-primary-lightest: #fffae2;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-navbar-link-color: #001623;
+  --ifm-menu-color: #ffffff;
+  --ifm-toc-link-color: #ffffff;
+   --ifm-color-emphasis-200: #153f59;
 }
 .navbar__logo {
   flex: 0 0 auto;
@@ -152,8 +156,11 @@ a:hover {
   color: #009AE4 !important;
   text-decoration: none;
 }
- /*client logo  */
- .text--left.client-logo {
-  margin-top: 15px !important; 
- } 
- 
+/* dark mode button color  */
+.toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  color: var(--ifm-navbar-link-color);
+}
+.toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module:hover {
+  background: #153f59 !important;
+  color: var(--ifm-color-primary);
+}
