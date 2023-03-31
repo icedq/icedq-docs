@@ -20,37 +20,37 @@ const sidebars = {
 
   tutorialSidebar: [
     'intro',
-    'intro-icedq',
     {
       type: 'category',
-      label: 'Installing On Premise',
+      label: 'VM Cluster Install',
       items: [
-        'onprem/requirements',
-        'onprem/vm-cluster-install',
-        'onprem/existing-cluster-install'
+        'embedded-cluster-requirements',
+        'embedded-cluster-online-platform-install',
+        'embedded-cluster-offline-platform-install',
+		'embedded-cluster-icedq-install',
+		'embedded-cluster-platform-info',
+		'embedded-cluster-backup-restore',
+		'embedded-cluster-automate-online',
+		'embedded-cluster-automate-offline'
         ]
     },
-        {
+	{
       type: 'category',
-      label: 'Installing On AWS',
+      label: 'Existing Cluster Install',
       items: [
-        'aws/requirements',
-        'aws/vm-cluster-install',
-        'aws/existing-cluster-install'
-        ]
-    },
-        {
-      type: 'category',
-      label: 'Installing On Azure',
-      items: [
-        'azure/requirements',
-        'azure/vm-cluster-install',
-        'azure/existing-cluster-install'
+        'existing-cluster-requirements',
+        'existing-cluster-online-platform-install',
+        'existing-cluster-offline-platform-install',
+		'existing-cluster-icedq-install',
+		'existing-cluster-platform-info',
+		'existing-cluster-backup-restore',
+		'existing-cluster-automate-online',
+		'existing-cluster-automate-offline'
         ]
     },
     'backup-recovery',
     'customer-environment'
-  ]
+ ]
 };
 
 module.exports = sidebars;
