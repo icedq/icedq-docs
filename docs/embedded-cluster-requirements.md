@@ -1,51 +1,126 @@
-# System Requirements 
+# System Requirements (Minimum)
 
-The topic describes the requirements for installing the application either on virtual machines or an existing kubernetes cluster. 
+The topic describes the requirements for installing the application on Virtual Machines, EC2 Instances, Azure VMs or Google Instances.
 
-## Using Virtual Machines
+---
 
-To install the application on virtual machines, your environment must meet the following minimum requirements. 
+While you can install the iceDQ platform on a single VM for patching or POC, a 3+ VM cluster is recommended for production environments to provide redundancy and high availability (HA). Any multiple-node cluster must have an odd number of VMs.
 
-### Minimum System Requirements
+**Production** 
 
-* 3 virtual machines for a multi node cluster installation is recommended. 
-* 8 CPUs or equivalent per machine. 
-* 16 GB of RAM per machine. 
+* 3 virtual machines.
+* 8 CPUs or equivalent per machine.
+* 16 GB of RAM per machine.
+* 500 GB of storage
+
+**POC**
+
+* 1 virtual machine 
+* 16 CPUs or more
+* 32 GB of RAM or more
+* 500 GB of storage
 
 :::important
 All machines should be in same data center and subnet. 
 :::
 
-#### Disk Space
+## Critical Prerequisites
 
-* 250 GB of disk space for installation per machine.  
-* 50 GB of /tmp partition per machine. 
-* 100 GB of /var partition per machine. 
-* 250 GB of NFS for storing reports and logs accessible from all machines.
+For each virtual machine ensure the following. 
+
+* Root or SUDO access is required for installation.
+* NUMA should be disabled.
+* NTP clock should be in sync. 
+* Use Static IPs (dynamic IPs are not supported). 
+* Use Static hostname (hostnames cannot change). 
+* IP Forwarding should be enabled. 
+
+### Operating System Prerequisites
+
+* Ubuntu 18.04
+* Ubuntu 22.04 (Recommended)
+* CentOS 8.x
+* RHEL 8.x
+* Oracle Linux 8.x 
+* Amazon Linux 2
+
+### Storage Prerequisites 
+
+Below are the recommended partitions for installing the cluster. Symbolic links are not supported. 
+
+| Partition    | Size   | Description                                         |
+|--------------|--------|-----------------------------------------------------|
+| /            | 50 GB  | Base OS, install files, logs and other dependencies |
+| /tmp         | 50 GB  |                                                     |
+| /var/lib     | 250 GB | Container images, logs, runtime volumes             |
+| /var/openebs | 500 GB | Persistent storage subsystem                        |
 
 :::important
-Symbolic links are not supported for partitions. 
+If required you can use NFS as persistent storage instead of /var/openebs. 
 :::
 
-#### Operating Systems
+## Network Access Control List (ACL) Exceptions
 
-Ubuntu 22.04, RHEL 8.1 and above are the supported operating systems. 
+iceDQ installations on the server with tight NAC will need below exceptions to properly install, license and initiate a deployment with the platform installer. 
 
-#### Networking 
+### Port Requirements
 
-Ideally firewall should be open between all the machines but if it is not possible due to security requirements then below list of ports should be open.
+#### For Cluster Operation
 
-* TCP ports 2379, 2380, 6443, 10250, 10257 and 10259.
-* UDP port 8472.
-* Node port 32222.
+The following ports are required between the virtual machines/ nodes to allow cluster operations.  
 
-#### Database 
+| Ports       | Protocol | Description           |
+|-------------|----------|-----------------------|
+| 2379-2380   | TCP      | Kubernetes etcd       |
+| 6443        | TCP      | Kubernetes API        |
+| 6783-6784   | TCP      | Kubernetes CNI        |
+| 10250-10252 | TCP      | Kubernetes components |
+| 8472        | UDP      | Kubernetes components |
+
+Additionally, following ports are required to be available and unused by other processes on each node. 
+
+| Ports | Purpose                                          |
+|-------|--------------------------------------------------|
+| 2381  | Kubernetes etcd                                  |
+| 6781  | Kubernetes CNI                                   |
+| 6782  | Kubernetes CNI                                   |
+| 9100  | Prometheus node-exporter metrics server          |
+| 10248 | Kubernetes kubelet health server                 |
+| 10249 | Kubernetes kube-proxy metrics server             |
+| 10257 | Kubernetes kube-controller-manager health server |
+| 10259 | Kubernetes kube-scheduler health server          |
+
+#### For External Access
+
+The follow ports are required for users to access the iceDQ platform components. 
+
+| Ports | Protocol | Description                                       |
+|-------|----------|---------------------------------------------------|
+| 443   | TCP      | Access to iceDQ Platform UI                       |
+| 80    | TCP      | Optional - HTTP(s) redirect for iceDQ platform UI |
+| 8800  | TCP      | Access to iceDQ Platform Installer                |
+| 22    | SSH      | Shell access to manage cluster nodes              |
+| 32222 | Node     | Node Port                                         |
+
+#### Outbound URL 
+
+| Exception                        | Purpose                                         |
+|----------------------------------|-------------------------------------------------|
+| k8s.kurl.sh                      | iceDQ platform installation script              |
+| kurl.sh                          | iceDQ platform installation script              |
+| kurl-sh.s3.amazonaws.com         | iceDQ platform installation script dependencies |
+| registry.replicated.com          | iceDQ platform container images                 |
+| proxy.replicated.com             | iceDQ platform container images                 |
+| icedq.azure.io                   | iceDQ platform container dependency images      |
+| replicated.app                   | iceDQ platform Installer license verification   |
+| auth.docker.io                   | Docker authentication                           |
+| registry-1.docker.io             | Docker registry                                 |
+| production.cloudflare.docker.com | Docker infrastructure                           |
+
+## Database 
 
 The application is bundled with a postgreSQL database repository for POC purposes. For production deployment we recommend using external postgreSQL 10.X and above database server. 
 
-### RBAC Requirements
-
-Root or SUDO access is required to perform the installation.
 
 ### Online Installation Requirements
 
