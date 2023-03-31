@@ -1,41 +1,30 @@
 # Setup Platform Installer (Online)
 
-This topic explains how to install the application on virtual machines in online and air gapped environment.
+This topic explains how to install the iceDQ platform installer in an online environment.
 
-## Prerequisites 
+---
 
-Make sure you meet the [Virtual Machine Installation Requirements](embedded-cluster-requirements#using-virtual-machines) before you start the installation process.
+Make sure you meet the [Virtual Machine Cluster Install Requirements](embedded-cluster-requirements) before you start the installation process.
 
-## Online Installation 
+To being installing iceDQ with the platform installer, you must first set up access to the administrative (admin) console. 
 
-:::important
-This is our recommended approach. 
-:::
-
-This section is for installing the application in an online environment.
-
-### Delivery Model
-
-Following diagram documents how the software is delivered in customer environment in an online environment.
-
-![On Prem Online Delivery Model](/img/on-prem-online-delivery-model.png)
-
-### Install 
-
-Log on to the Primary VM to run the below installation command. It will provision the cluster, install kots, admin console and the beta version of ICEDQ on the cluster. 
+1. SSH as a privileged user to the system that will host the iceDQ instance. 
+2. To install the release from beta channel run the below command.  
 
 ```bash
 curl -sSL https://kurl.sh/icedq-beta | sudo bash
 ```
 
-After the installation is complete follow below steps. 
+The installer runs a series of preflight checks to ensure that the node is ready for installation. If any of the preflight checks fail, the installer exits so that the issues can be resolved.
 
-* Note down kotsadm (admin console) details and the password 
-* Log in to the admin console to complete the application setup
+You may be prompted to disable anything on the system that is incompatible. Respond with Y to disable and continue with the installation.
 
-### Configure 
+The installation can take 30 minutes or more to complete.
 
-### Add Nodes
+3. Once you see the message `Installation Complete` copy and paste the URL following `Kotsadmn:` and the subsequent password. Save the information as you will not see the password again. 
 
-### Login
+## Access Platform Installer Admin Console
+
+
+
 

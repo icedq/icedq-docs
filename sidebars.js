@@ -25,6 +25,7 @@ const sidebars = {
       label: 'VM Cluster Install',
       items: [
         'embedded-cluster-requirements',
+        'embedded-cluster-architecture',
         'embedded-cluster-online-platform-install',
         'embedded-cluster-offline-platform-install',
 		'embedded-cluster-icedq-install',
@@ -39,6 +40,7 @@ const sidebars = {
       label: 'Existing Cluster Install',
       items: [
         'existing-cluster-requirements',
+        'existing-cluster-architecture',
         'existing-cluster-online-platform-install',
         'existing-cluster-offline-platform-install',
 		'existing-cluster-icedq-install',
