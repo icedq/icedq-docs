@@ -48,6 +48,7 @@ const sidebars = {
         'azure/existing-cluster-install'
         ]
     },
+    'backup-recovery',
     'customer-environment'
   ]
 };
