@@ -6,23 +6,28 @@ The topic describes the requirements for installing the application on Virtual M
 
 While you can install the iceDQ platform on a single VM for patching or POC, a 3+ VM cluster is recommended for production environments to provide redundancy and high availability (HA). Any multiple-node cluster must have an odd number of VMs.
 
-**Production** 
+**Multi Node Cluster** 
 
 * 3 virtual machines.
 * 8 CPUs or equivalent per machine.
 * 16 GB of RAM per machine.
-* 500 GB of storage
-
-**POC**
-
-* 1 virtual machine 
-* 16 CPUs or more
-* 32 GB of RAM or more
-* 500 GB of storage
+* 500 GB of SSD. [See Partition Recommendation](#storage-prerequisites)
 
 :::important
 All machines should be in same data center and subnet. 
 :::
+
+**Single Node**
+
+* 1 virtual machine. 
+* 16 CPUs or more.
+* 32 GB of RAM or more.
+* 500 GB of SSD. [See Partition Recommendation](#storage-prerequisites)
+
+:::important
+We recommend 3000 IOPS for disks. Most cloud providers limit IOPS for disks and for instances/virtual machines. Consult your provider's documentation to ensure the effective IOPS. 
+:::
+
 
 ## Critical Prerequisites
 
@@ -37,6 +42,8 @@ For each virtual machine ensure the following.
 
 ### Operating System Prerequisites
 
+Below are the operating systems supported by the platform installer. 
+
 * Ubuntu 18.04
 * Ubuntu 22.04 (Recommended)
 * CentOS 8.x
@@ -48,12 +55,13 @@ For each virtual machine ensure the following.
 
 Below are the recommended partitions for installing the cluster. Symbolic links are not supported. 
 
-| Partition    | Size   | Description                                         |
-|--------------|--------|-----------------------------------------------------|
-| /            | 50 GB  | Base OS, install files, logs and other dependencies |
-| /tmp         | 50 GB  |                                                     |
-| /var/lib     | 250 GB | Container images, logs, runtime volumes             |
-| /var/openebs | 500 GB | Persistent storage subsystem                        |
+| Partition    | Size   | Description                                          |
+|--------------|--------|------------------------------------------------------|
+| /            | 50 GB  | Base OS, install files, logs and other dependencies. |
+| /tmp         | 50 GB  | Used during install & upgrade process.               |
+| /var/lib     | 250 GB | Container images, logs, runtime volumes.             |
+| /var/openebs | 500 GB | Persistent storage subsystem.                        |
+
 
 :::important
 If required you can use NFS as persistent storage instead of /var/openebs. 
@@ -102,7 +110,7 @@ The follow ports are required for users to access the iceDQ platform components.
 | 22    | SSH      | Shell access to manage cluster nodes              |
 | 32222 | Node     | Node Port                                         |
 
-#### Outbound URL 
+### Outbound URL Requirements 
 
 | Exception                        | Purpose                                         |
 |----------------------------------|-------------------------------------------------|
@@ -117,17 +125,6 @@ The follow ports are required for users to access the iceDQ platform components.
 | registry-1.docker.io             | Docker registry                                 |
 | production.cloudflare.docker.com | Docker infrastructure                           |
 
-## Database 
+## External Database 
 
-The application is bundled with a postgreSQL database repository for POC purposes. For production deployment we recommend using external postgreSQL 10.X and above database server. 
-
-
-### Online Installation Requirements
-
-Our recommendation is to perform the installation in online mode. For this following domains need to be accessible from servers performing online installations. For a list of IP addresses for these services, see [replicatedhq/ips](https://github.com/replicatedhq/ips/blob/master/ip_addresses.json) in GitHub.
-
-* Docker Hub 
-* proxy.replicated.com
-* replicated.app
-* k8s.kurl.sh
-* amazonaws.com
+The application is bundled with a postgreSQL database. For production deployment we recommend using external postgreSQL 10.X and above database server.
