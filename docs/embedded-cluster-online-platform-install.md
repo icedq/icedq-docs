@@ -24,3 +24,9 @@ The installation can take 30 minutes or more to complete.
 3. Once you see the message `Installation Complete` copy and paste the URL following `Kotsadmn:` and the subsequent password. Save the information as you will not see the password again. 
 
 ## Access Platform Installer Admin Console
+```bash
+Kotsadm: http://0.0.0.0:8800
+Login with password (will not be shown again): w4DGXxnt8
+This password has been set for you by default. It is recommended that you change this password; 
+this can be done with the following command: kubectl kots reset-password default
+```
