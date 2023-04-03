@@ -24,7 +24,3 @@ The installation can take 30 minutes or more to complete.
 3. Once you see the message `Installation Complete` copy and paste the URL following `Kotsadmn:` and the subsequent password. Save the information as you will not see the password again. 
 
 ## Access Platform Installer Admin Console
-
-
-
-

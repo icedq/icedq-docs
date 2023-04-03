@@ -1,10 +1,9 @@
 # Architecture Overview 
 
+## Multi Node Architecture
+
+![Multi Node Architecture](/img/icedq-embedded-multi-node.png)
 
 ## Single Node 
 
-![](/img/icedq-embedded-single-node.png)
-
-## Distributed
-
-![](/img/icedq-embedded-multi-node.png)
+![Single Node Architecture](/img/icedq-embedded-single-node.png)

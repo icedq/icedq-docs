@@ -45,7 +45,7 @@ For each virtual machine ensure the following.
 Below are the operating systems supported by the platform installer. 
 
 * Ubuntu 18.04
-* Ubuntu 22.04 (Recommended)
+* Ubuntu 22.04
 * CentOS 8.x
 * RHEL 8.x
 * Oracle Linux 8.x 
@@ -64,7 +64,7 @@ Below are the recommended partitions for installing the cluster. Symbolic links 
 
 
 :::warning IMPORTANT
-If required you can use NFS as persistent storage instead of /var/openebs. 
+For production use NFS as persistent storage and mount it as /var/openebs each node.  
 :::
 
 ## Network Access Control List (ACL) Exceptions
