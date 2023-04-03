@@ -1,11 +1,9 @@
 # Configure & Deploy iCEDQ
-All the configuration for the application and platform installer must be done via the Platform Installer UI. Making changes to underlying Kubernetes resources is not supported.  
+All the application and platform installer configurations must be done via the Platform Installer UI. Making changes to underlying Kubernetes resources is not supported.  
 
 ### Repository Settings
 
-Follow below steps in the Repository Database section
-
-1. Click the checkbox if you would like to use an externally hosted PostgreSQL database otherwise keep it selected. 
+1. Click the checkbox if you would like to use an externally hosted PostgreSQL database; otherwise, keep it selected. 
 2. Input the username and password for the PostgreSQL database. 
 
 ![Repository Settings](/img/repository-db-settings.png)
@@ -16,7 +14,7 @@ For embedded database the installer will create the username and password provid
 
 ### Initial User Setup
 
-Follow below steps in the Authentication section to set up the super administrator of the application. 
+Follow the below steps in the Authentication section to set up the super administrator of the application. 
 
 1. Provide the username `default is admin` and password of the super administrator 
 
@@ -24,11 +22,11 @@ Follow below steps in the Authentication section to set up the super administrat
 
 ### Load Balancer Setup 
 
-Follow below steps in Network Discovery and Domain section. 
+Follow the below steps in Network Discovery and Domain section. 
 
-1. Input the DNS record along with port 32222 for accessing iceDQ application in the Base URL.  
-2. Input the DNS record pointing to the Platform Installer and iceDQ Application in the Domain property. 
-3. Select the checkbox for External TLS certificate if you would like to replace the self-signed certificates.
+1. Input the DNS record and port 32222 for accessing the iceDQ application in the Base URL.  
+2. Input the DNS record pointing to the Platform Installer and iceDQ application in the Domain for the iceDQ app. 
+3. Select the External TLS certificate checkbox if you want to replace the self-signed certificates.
 
 When you are done click **Continue**
 
@@ -44,12 +42,12 @@ The platform installer will start deploying all the services once you click **De
 
 #### Initialize Vault 
 
-To deploy the vault service follow below steps. 
+To deploy the vault service, follow the below steps.
 
-1. Open the browser and go to iceDQ application URL configured above [Load Balancer Setup](#load-balancer-setup) 
-2. Login using the Administrator Username & Password provided in [Initial User Setup](#initial-user-setup)
+1. Open the browser and go to the iceDQ application URL configured above [Load Balancer Setup](#load-balancer-setup) 
+2. Log in using the Administrator Username & Password provided in [Initial User Setup](#initial-user-setup)
 3. Go to Administration and click on Vault
-4. Click `Initialie Vault`
+4. Click `Initialize Vault`
 
 Now that `vault` is initialized, all application services should be in ready state. 
 
