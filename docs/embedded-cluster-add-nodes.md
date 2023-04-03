@@ -4,7 +4,7 @@ The topic provides the necessary steps to add more nodes to the existing embedde
 
 ---
 
-:::note
+:::important
 The total number of nodes in a cluster must be an odd number (3, 5, 7, ...).
 :::
 
