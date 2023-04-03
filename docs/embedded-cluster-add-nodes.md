@@ -13,7 +13,7 @@ The total number of nodes in a cluster must be an odd number (3, 5, 7, ...).
 3. Select **Secondary Node** and then click **Copy Command**
 4. Log on and run the command on the node (Repeat step for all the nodes)
 
-![Cluster Management Add Node](/img/embedded-cluster-add-nodes)
+![Cluster Management Add Node](/img/embedded-cluster-add-nodes.png)
 
 :::important
 The code generated here expires after time. We recommend that you always copy the code as you work to add additional nodes. Do not save the code for use later.
@@ -21,6 +21,6 @@ The code generated here expires after time. We recommend that you always copy th
 
 Once the installation is complete you will see below message on the CLI and the new node in the Cluster Management tab.
 
-![New Node Joined](/img/embedded-cluster-node-joined)
+![New Node Joined](/img/embedded-cluster-node-joined.png)
 
-![Cluster Management New Node](/img/embedded-cluster-management)
+![Cluster Management New Node](/img/embedded-cluster-management.png)
