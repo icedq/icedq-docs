@@ -23,10 +23,22 @@ The installation can take 30 minutes or more to complete.
 
 3. Once you see the message `Installation Complete` copy and paste the URL following `Kotsadmn:` and the subsequent password. Save the information as you will not see the password again. 
 
+![Installation Complete](/img/embedded-cluster-install-complete.png)
+
 ## Access Platform Installer Admin Console
-```bash
-Kotsadm: http://0.0.0.0:8800
-Login with password (will not be shown again): w4DGXxnt8
-This password has been set for you by default. It is recommended that you change this password; 
-this can be done with the following command: kubectl kots reset-password default
-```
+
+Now you are ready to access the iceDQ Platform Installer from a Chrome/ Edge Browser. 
+
+1. In the browser window, enter the Kotsadm (Platform Installer) URL copied in the step 3 above. 
+
+![Platform Installer UI](/img/kotsadmin-landing-page.png)
+
+2. On HTTPS for UI, you can Skip & Continue or Enter the FQDN/ IP for the load balancer, and then click Upload & Continue. 
+3. Now select the license.yaml file provided to you and click Upload License. 
+
+![Upload License](/img/upload-license.png)
+
+4. Download from the internet 
+5. Next, see the Configure & Deploy topic
+6. To setup additional node for multi node cluster, continue to Add nodes 
+

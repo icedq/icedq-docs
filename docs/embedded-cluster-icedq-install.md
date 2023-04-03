@@ -1,36 +1,5 @@
 # Configure & Deploy iCEDQ
 
-
-
-## Access Platform Installer Admin Console
-
-Use the KOTS admin console URL in a browser from previous step.
-
-![](/img/icedq-kots-admin-login.png)
-
-Enter the password you provided earlier or visible on console, and click **Log In**.
-
-### Upload Your icedq license
-
-1. Once you are logged into the KOTS admin console, you can upload your icedq license.
-
-2. Obtain the icedq license file from your icedq Customer Success contact or email [support@icedq.com](mailto:support@icedq.com).
-3. Drag your license YAML file into the KOTS admin tool:
-4. Next, upload the license file: Click **Upload license**.
-
-![](/img/icedq-upload-license.png)
-
-Now that license file is uploaded, you can install icedq.
-
-### Download icedq over the internet
-
-If you are installing icedq over the Internet, click the **download icedq from the Internet** link.
-![](/img/icedq-choose-installation.png)
-
-KOTS begins installing icedq into your cluster.
-
-Next, you will configure icedq.
-
 ## Configure icedq
 
 Now that you have added your license you can configure the networking for the icedq installation.

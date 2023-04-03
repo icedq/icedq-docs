@@ -1,7 +1,6 @@
 # Architecture Overview 
 
-## Multi Node Architecture
-
+## Multi Node
 ![Multi Node Architecture](/img/icedq-embedded-multi-node.png)
 
 ## Single Node 
