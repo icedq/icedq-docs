@@ -2,7 +2,7 @@
 
 To install the application on an existing Kubernetes cluster, your environment must meet the following minimum requirements. 
 
-:::important
+:::warning IMPORTANT
 Currently, we recommend using a dedicated cluster for installing iceDQ. 
 :::
 
@@ -57,6 +57,6 @@ Make sure that you use a compatible registry. The app manager has been tested fo
 * Sonatype Nexus
 * Harbor
 
-:::important 
+:::warning IMPORTANT 
 To avoid docker rate limit use a Pro or Team account. 
 :::

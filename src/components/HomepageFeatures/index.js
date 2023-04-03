@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Getting Started with iCEDQ',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
        Learn iCEDQ basics and get up to speed quickly.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Working with iCEDQ',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    // Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
        Learn how to use and complete tasks in iCEDQ.
@@ -23,10 +23,10 @@ const FeatureList = [
   },
   {
     title: 'Getting Data into iCEDQ',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Understand your options for loading your data into Snowflake.
+        Understand your options for loading your data into iCEDQ.
       </>
     ),
   },
@@ -40,7 +40,7 @@ function Feature({ Svg, title, description }) {
           <img src='img/icons/setting-up-feed.svg' alt='' width={40}></img>
           <h2> {title} </h2>
           <p> {description} </p>
-          <div className='listContainer_1LpF'>
+          {/* <div className='listContainer_1LpF'>
             <ul>
               <li>
                 <a href='#'>Browser extension installation</a>
@@ -49,7 +49,7 @@ function Feature({ Svg, title, description }) {
                 <a href='#'>Browser extension installation</a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

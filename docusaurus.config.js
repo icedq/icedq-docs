@@ -62,12 +62,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/icedq.png',
       navbar: {
         title: '',
         logo: {
           alt: 'iCEDQ',
-          src: 'img/iCEDQ.png',
+          src: 'img/icedq.png',
         },
         items: [
           {

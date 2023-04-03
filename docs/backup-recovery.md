@@ -1,12 +1,9 @@
----
-sidebar_position: 4
----
 # Backup and Recovery
 
 This topic provides a summary of the steps involved in backup and recovery, and provides details on storages.
-
 KOTS has documented snapshots extensively in [Kots Documentation](https://kots.io/kotsadm/snapshots/overview/).
 
+---
 ### Overview
 
 Back up and recover iCEDQ application using [KOTS snapshots](https://kots.io/kotsadm/snapshots/overview/).
@@ -24,7 +21,7 @@ You can automate both types of snapshots by admin console UI or command line too
 
 Snapshots are stored in an AWS S3 bucket or AWS S3-compatible storage (iCEDQ recommends either), or in Internal Storage.
 
-![](./static/icedq-backup-and-recovery-00.png)
+![](/img/icedq-backup-and-recovery-00.png)
 
 You will select and set up the storage option before creating a snapshot. This setup is described below.
 
@@ -56,7 +53,7 @@ Storage destinations are described in the [KOTS documentation](https://kots.io/k
 3. Click **Settings & Schedule**.
 4. In **Storage**, select the storage method to use.
 
-   ![](./static/icedq-backup-and-recovery-00.png)
+   ![](/img/icedq-backup-and-recovery-00.png)
    
    In **Amazon S3** and **Other S3-Compatible Storage**, enter the location and credentials.  
    For details on these settings, see [Compatible Backend Stores](https://kots.io/kotsadm/snapshots/storage-destinations/) from KOTS.
@@ -65,15 +62,14 @@ Storage destinations are described in the [KOTS documentation](https://kots.io/k
 Now that you have storage for your snapshots, you can create the snapshots.
 
 ### Step 2: Create full or partial snapshots
-
 1. In the KOTS admin tool, click **Full Snapshots (Instance)** or **Partial Snapshots (Application)**.
 2. Click **Start a snapshot**. The progress of the snapshot is shown on the screen:
  
-  ![](./static/icedq-backup-and-recovery-02.png)
+  ![](/img/icedq-backup-and-recovery-02.png)
   
 3. Click the **instance-xxxx** to see the details of the snapshot.
 
-![](./static/icedq-backup-and-recovery-03.png)
+![](/img/icedq-backup-and-recovery-03.png)
 
 Retain the snapshot for recovery operations.
 
@@ -101,11 +97,11 @@ You can perform a full or partial restore from a Full Snapshot. This is why iCED
 1. Click **Full Snapshots (Instance)**.
 2. Click the restore button.
 
-   ![](./static/icedq-backup-and-recovery-04.png)
+   ![](/img/icedq-backup-and-recovery-04.png)
    
    **Restore from backup** appears.
    
-   ![](./static/icedq-backup-and-recovery-05.png)
+   ![](/img/icedq-backup-and-recovery-05.png)
    
 3. Select **Full restore** or **Partial restore**.
 4. For **Full restore**, do the following:
@@ -137,7 +133,7 @@ You can perform a partial restore using a Full or Partial Snapshot. The Full Sna
 1. Click **Partial snapshots**.
 2. Click the restore button.
 
-   ![](./static/icedq-backup-and-recovery-04.png)
+   ![](/img/icedq-backup-and-recovery-04.png)
    
    **Restore from Partial backup (Application)** appears.
 3. Enter the slug **iCEDQ**.
@@ -251,7 +247,7 @@ $ kubectl kots restore --from-backup instance-nc8rj
    • Restore completed successfully.
 ```
 
-:::note
+:::warning Important
 
 1. Snapshots cannot be restored to a different namespace than when the snapshot was taken.
 2. Snapshots cannot be restored to different installation methods. For example, online cluster snapshots cannot be restored to offline clusters.
@@ -262,7 +258,6 @@ $ kubectl kots restore --from-backup instance-nc8rj
 7. The target directory needs to be read-writable by the user:group 1001:1001
 8. All the nodes in the cluster must have the necessary NFS client packages installed to be able to communicate with the NFS server. For example, the nfs-common package is a common package used on Ubuntu.
 9. Any firewalls must allow traffic between the NFS server and clients
-
 
 See the [**KOTS documentation**](https://docs.replicated.com/enterprise/snapshots-understanding) for more details on backup and recovery settings.
 :::

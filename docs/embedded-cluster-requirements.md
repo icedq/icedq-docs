@@ -13,7 +13,7 @@ While you can install the iceDQ platform on a single VM for patching or POC, a 3
 * 16 GB of RAM per machine.
 * 500 GB of SSD. [See Partition Recommendation](#storage-prerequisites)
 
-:::important
+:::warning IMPORTANT
 All machines should be in same data center and subnet. 
 :::
 
@@ -24,7 +24,7 @@ All machines should be in same data center and subnet.
 * 32 GB of RAM or more.
 * 500 GB of SSD. [See Partition Recommendation](#storage-prerequisites)
 
-:::important
+:::warning IMPORTANT
 We recommend 3000 IOPS for disks. Most cloud providers limit IOPS for disks and for instances/virtual machines. Consult your provider's documentation to ensure the effective IOPS. 
 :::
 
@@ -63,7 +63,7 @@ Below are the recommended partitions for installing the cluster. Symbolic links 
 | /var/openebs | 500 GB | Persistent storage subsystem.                        |
 
 
-:::important
+:::warning IMPORTANT
 If required you can use NFS as persistent storage instead of /var/openebs. 
 :::
 

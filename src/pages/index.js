@@ -26,7 +26,7 @@ function HomepageHeader() {
             </div>
           </div>
           <div className='col text--center'>
-            <img src='/img/Data report-icedq.png' alt='DataOps-Platform-for-Testing-and-Monitoring-iCEDQ.png'></img>
+            <img src='/img/data-report-icedq.png' alt='DataOps-Platform-for-Testing-and-Monitoring-iCEDQ.png'></img>
           </div>
         </div>
       </div>
