@@ -28,6 +28,7 @@ const sidebars = {
         'embedded-cluster-architecture',
         'embedded-cluster-online-platform-install',
         'embedded-cluster-offline-platform-install',
+        'embedded-cluster-add-nodes',
 		'embedded-cluster-icedq-install',
 		'embedded-cluster-platform-info',
 		'embedded-cluster-backup-restore',
