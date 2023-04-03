@@ -34,7 +34,6 @@ We recommend 3000 IOPS for disks. Most cloud providers limit IOPS for disks and 
 For each virtual machine ensure the following. 
 
 * Root or SUDO access is required for installation.
-* NUMA should be disabled.
 * NTP clock should be in sync. 
 * Use Static IPs (dynamic IPs are not supported). 
 * Use Static hostname (hostnames cannot change). 

@@ -40,5 +40,5 @@ Now you are ready to access the iceDQ Platform Installer from a Chrome/ Edge Bro
 
 4. Select Download from the internet option to download the application images. 
 5. Next, see the [Configure & Deploy iCEDQ](embedded-cluster-icedq-install) for deploying the application.
-6. To setup additional node for multi node cluster, continue to Add nodes 
+6. To setup additional node for multi node cluster, go to [Add Additional Nodes](embedded-cluster-add-nodes) 
 
