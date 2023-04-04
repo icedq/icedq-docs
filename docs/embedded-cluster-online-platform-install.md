@@ -6,7 +6,7 @@ This topic explains how to install the iceDQ platform installer in an online env
 
 Make sure you meet the [Virtual Machine Cluster Install Requirements](embedded-cluster-requirements) before you start the installation process.
 
-To being installing iceDQ with the platform installer, you must first set up access to the administrative (admin) console. 
+To begin installing iceDQ with the platform installer, you must first set up access to the administrative (admin) console. 
 
 1. SSH as a privileged user to the system that will host the iceDQ instance. 
 2. To install the release from beta channel run the below command.  
