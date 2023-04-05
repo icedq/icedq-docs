@@ -90,7 +90,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
+  /*      links: [
           {
             title: 'Docs',
             items: [
@@ -164,6 +164,7 @@ const config = {
             ],
           },
         ],
+    */
         copyright: `Torana Inc. © ${new Date().getFullYear()}. All Rights Reserved`,
       },
       prism: {
