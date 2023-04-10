@@ -36,7 +36,7 @@ const sidebars = {
 		'embedded-cluster-automate-offline'
         ]
     },
-/*	{
+	{
       type: 'category',
       label: 'Existing Cluster Install',
       items: [
@@ -51,7 +51,6 @@ const sidebars = {
 		'existing-cluster-automate-offline'
         ]
     },
-*/
     'backup-recovery',
     'customer-environment'
  ]
