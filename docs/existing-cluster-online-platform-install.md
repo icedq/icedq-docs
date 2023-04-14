@@ -13,7 +13,8 @@ To begin installing iceDQ with the platform installer, you must first set up acc
 
 ```bash
 curl https://kots.io/install | bash
-kubectl kots install icedq/beta --namespace <your-namespace> --shared-password <setup-admin-console-password>
+kubectl kots install icedq/beta --namespace <your-namespace> \
+--shared-password <setup-admin-console-password>
 ```
 
 If the KUBECONFIG environment variable is not set you will need to add `--kubeconfig /path/to/kube/config` to the install command above so that it can authenticate to your cluster.
