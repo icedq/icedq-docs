@@ -9,7 +9,7 @@ Make sure you meet the [Existing Cluster Install Requirements](existing-cluster-
 To begin installing iceDQ with the platform installer, you must first set up access to administrative (admin) console. 
 
 1. SSH to the system from where you run Kubectl commands for existing cluster. 
-2. To install the release from beta channel replace <> parameters and run the below command. 
+2. To install the release from beta channel replace `<>` parameters and run the below command. 
 
 ```bash
 curl https://kots.io/install | bash
