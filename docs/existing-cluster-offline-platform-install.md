@@ -38,7 +38,7 @@ kubectl kots admin-console push-images <path-to-offline-installer-package> <your
   --registry-password <your-registry-password>
 ```
 
-:::Note
+:::note
 If you are using AWS ECR then the repositories should be created before the install process.  
 :::
 
