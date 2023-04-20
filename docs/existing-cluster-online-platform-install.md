@@ -23,6 +23,8 @@ The installer runs a series of preflight checks to ensure that the node is ready
 
 3. Once you see the message `Installation Complete` copy and paste the URL to access the Admin Console. Use the password provided in install command to login. 
 
+![Platform Installer Install Complete](/img/kotsadm-install-complete.png)
+
 ## Access Platform Installer Admin Console
 
 Now you are ready to access the iceDQ Platform Installer from a Chrome/ Edge Browser. 
@@ -36,5 +38,8 @@ Now you are ready to access the iceDQ Platform Installer from a Chrome/ Edge Bro
 
 ![Upload License](/img/upload-license.png)
 
-4. Select Download from the internet option to download the application images. 
+4. Choose Download from the internet option to download the application images. 
+
+![Download Bundle](/img/bundle-internet-download.png)
+
 5. Next, see the [Configure & Deploy iCEDQ](existing-cluster-icedq-install) for deploying the application.
