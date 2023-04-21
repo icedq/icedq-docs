@@ -14,7 +14,11 @@ Currently, we recommend using a dedicated cluster for installing iceDQ.
 * Existing persistent StorageClass (RWO). 
 * 3+ Node Cluster. 
 * Storage external to the Cluster to store backups and snapshots. 
-* Load balancer for the iceDQ platform UI 
+* Load balancer to access the iceDQ Platform Installer UI (8800) and Application UI (443) 
+
+:::note
+Map TCP ports 443 and 8800 to 32222 and 30000 Kubernetes ports respectively
+:::
 
 ## Critical Prerequisites
 
