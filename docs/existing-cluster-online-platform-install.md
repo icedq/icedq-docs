@@ -9,10 +9,13 @@ Make sure you meet the [Existing Cluster Install Requirements](existing-cluster-
 To begin installing iceDQ with the platform installer, you must first set up access to administrative (admin) console. 
 
 1. SSH to the system from where you run Kubectl commands for existing cluster. 
-2. To install the release from beta channel replace `<>` parameters and run the below command. 
+2. To install the release from beta channel replace `<>` parameters and run the below commands. 
 
 ```bash
 curl https://kots.io/install | bash
+```
+
+```bash
 kubectl kots install icedq/beta --namespace <your-namespace> \
 --shared-password <setup-admin-console-password>
 ```
@@ -24,6 +27,33 @@ The installer runs a series of preflight checks to ensure that the node is ready
 3. Once you see the message `Installation Complete` copy and paste the URL to access the Admin Console. Use the password provided in install command to login. 
 
 ![Platform Installer Install Complete](/img/kotsadm-install-complete.png)
+
+Now you will have to expose the platform installer UI to be accessed via load balancer. 
+
+4. Create a `kotsadm-lb.yaml` file and insert below spec after updating namespace parameter. 
+
+```bash
+apiVersion: v1
+kind: Service
+metadata:
+  name: kotsadm-lb
+  namespace: <your-namespace>
+spec:
+  ports:
+  - nodePort: 30000
+    port: 3000
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: kotsadm
+  type: NodePort
+```
+
+5. Apply the above spec to the cluster to expose the service
+
+```bash
+kubectl -n <your-namespace> apply -f kotsadm-lb.yaml
+```
 
 ## Access Platform Installer Admin Console
 
