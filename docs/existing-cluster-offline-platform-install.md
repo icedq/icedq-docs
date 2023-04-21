@@ -33,9 +33,9 @@ mv kubectl-kots /usr/local/bin
 2. Upload the platform installer container images to your private registry to prepare for installation into the existing Kubernetes cluster. 
 
 ```bash
-kubectl kots admin-console push-images <path-to-offline-installer-package> <your-registry-endpoint>/<your-registry-name> \
-  --registry-username <your-registry-username> \
-  --registry-password <your-registry-password>
+kubectl kots admin-console push-images <installer-bundle-path> <registry-endpoint>/<registry-name> \
+  --registry-username <username> \
+  --registry-password <password>
 ```
 
 :::note
@@ -46,9 +46,9 @@ If you are using AWS ECR then the repositories should be created before the inst
 
 ```bash
 kubectl kots install icedq \
-  --kotsadm-registry <your-registry-endpoint>/<your-registry-name> \
-  --registry-username <your-registry-username> \
-  --registry-password <your-registry-password> \
+  --kotsadm-registry <registry-endpoint>/<registry-name> \
+  --registry-username <username> \
+  --registry-password <password> \
   --namespace <your-namespace> \
   --shared-password <setup-admin-console-password>
 ```

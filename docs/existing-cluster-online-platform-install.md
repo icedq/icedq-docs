@@ -28,7 +28,12 @@ The installer runs a series of preflight checks to ensure that the node is ready
 
 ![Platform Installer Install Complete](/img/kotsadm-install-complete.png)
 
-Now you will have to expose the platform installer UI to be accessed via load balancer. 
+Above command opens localhost port 8800, which forwards to the `kotsadm` service. So if you are using a GUI based linux or MacOS then you can access the platform installer via `http://localhost:8800`. You can use below command to port forward. 
+```bash
+kubectl port-forward svc/kotsadm 8800:3000
+```
+
+However, if you would like to access platform installer from anywhere then you will have to expose the platform installer UI to be accessed via load balancer. So below are the steps for the same.    
 
 4. Create a `kotsadm-lb.yaml` file and insert below spec after updating namespace parameter. 
 
