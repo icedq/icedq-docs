@@ -90,3 +90,9 @@ kubectl -n <your-namespace> apply -f kotsadm-lb.yaml
 ## Access Platform Installer Admin Console
 
 Now you are ready to access the iceDQ Platform Installer from a Chrome/ Edge Browser. 
+
+1. In the browser window, enter the Admin Console (Platform Installer) URL copied in the step 3 above. 
+
+![Platform Installer UI](/img/kotsadmin-landing-page.png)
+
+2. Next, see the [Configure & Deploy iCEDQ](existing-cluster-icedq-install) for deploying the application.

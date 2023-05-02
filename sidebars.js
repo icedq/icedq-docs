@@ -30,9 +30,7 @@ const sidebars = {
         'embedded-cluster-offline-platform-install',
         'embedded-cluster-add-nodes',
 		'embedded-cluster-icedq-install',
-		'embedded-cluster-platform-info',
-		'embedded-cluster-automate-online',
-		'embedded-cluster-automate-offline'
+		'embedded-cluster-platform-info'
         ]
     },
 	{
@@ -44,9 +42,7 @@ const sidebars = {
         'existing-cluster-online-platform-install',
         'existing-cluster-offline-platform-install',
 		'existing-cluster-icedq-install',
-		'existing-cluster-platform-info',
-		'existing-cluster-automate-online',
-		'existing-cluster-automate-offline'
+		'existing-cluster-platform-info'
         ]
     },
     'backup-recovery',
